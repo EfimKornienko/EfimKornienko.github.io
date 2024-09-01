@@ -1,9 +1,11 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
 import { HomePage } from "../../pages/home";
+import { RootPage } from "../root/RootPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
+    element: <RootPage />,
     children: [
       {
         index: true,
